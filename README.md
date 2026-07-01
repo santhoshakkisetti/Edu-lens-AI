@@ -1,4 +1,4 @@
-# 📚 EduLens AI – AI Teacher Companion
+# 📚 EduLens AI – AI Teacher Companion(usig google ai studio)
 
 EduLens AI is an AI-powered learning companion that transforms the way students study. Simply capture an image of a blackboard, notebook, textbook, or handwritten notes, and the app uses AI to extract text, explain concepts in simple language, and generate personalized learning materials.
 
