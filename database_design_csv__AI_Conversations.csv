@@ -1,0 +1,8 @@
+Column Name,Data Type,Required (Yes/No),Default Value,Primary Key,Foreign Key,Description,Example Value
+conversation_id,VARCHAR(36),Yes,NULL,Yes,No,Unique identifier for conversational session (UUID),aic_5e3f2a1b
+user_id,VARCHAR(36),Yes,NULL,No,Users.user_id,Foreign key referencing user participant,usr_9f82a1b3
+context_type,VARCHAR(50),Yes,'general',No,No,"Core focus area of conversation (general, chapter_doubt, image_ocr, note_helper)",chapter_doubt
+context_id,VARCHAR(36),No,NULL,No,No,"ID linking to targeted module context (e.g., chapter_id, note_id)",chp_5e3f2a1b
+messages_history,JSON,Yes,NULL,No,No,Structured payload array holding chat exchanges,"[{""sender"": ""user"", ""text"": ""Explain qubit superposition.""}, {""sender"": ""ai"", ""text"": ""Superposition is...""}]"
+created_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Timestamp conversational session opened,2026-06-30 18:00:00
+updated_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Timestamp of most recent message received,2026-06-30 18:15:00

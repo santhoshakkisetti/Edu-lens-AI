@@ -1,0 +1,8 @@
+Column Name,Data Type,Required (Yes/No),Default Value,Primary Key,Foreign Key,Description,Example Value
+achievement_id,VARCHAR(36),Yes,NULL,Yes,No,Unique identifier for achievement category (UUID),ach_1a2b3c4d
+title,VARCHAR(100),Yes,NULL,No,No,Header title of the achievement badge,Night Owl
+description,VARCHAR(255),Yes,NULL,No,No,Description of requirements to unlock,Complete a quiz or study session between 12:00 AM and 4:00 AM.
+points,INT,Yes,10,No,No,Gamification points awarded on unlock,50
+badge_url,VARCHAR(2083),Yes,NULL,No,No,URL linking to vector graphic illustration,https://example.com/badges/night_owl.svg
+criteria_type,VARCHAR(50),Yes,NULL,No,No,"Metrics parameter class analyzed (streak, score, time)",quiz_score
+criteria_value,INT,Yes,1,No,No,Required numerical value to trigger lock release,95

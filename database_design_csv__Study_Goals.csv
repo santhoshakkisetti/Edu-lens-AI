@@ -1,0 +1,11 @@
+Column Name,Data Type,Required (Yes/No),Default Value,Primary Key,Foreign Key,Description,Example Value
+goal_id,VARCHAR(36),Yes,NULL,Yes,No,Unique identifier for configured goal (UUID),gol_1e2f3a4b
+user_id,VARCHAR(36),Yes,NULL,No,Users.user_id,Foreign key referencing target user owner,usr_9f82a1b3
+title,VARCHAR(150),Yes,NULL,No,No,Objective description title,Master Quantum Computing concepts before final exams
+target_type,VARCHAR(50),Yes,'time_spent',No,No,"Metrics constraint evaluated (time_spent, quizzes_taken, chapters_read)",time_spent
+target_value,INT,Yes,NULL,No,No,Target value constraint count to achieve completion,18000
+current_value,INT,Yes,0,No,No,Current progression value registered,7200
+start_date,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Timestamp target tracks activated,2026-06-25 00:00:00
+end_date,TIMESTAMP,Yes,NULL,No,No,Timestamp deadline targeting limit,2026-07-15 23:59:59
+status,VARCHAR(20),Yes,'active',No,No,"Goal phase descriptor (active, completed, failed, paused)",active
+created_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Configuration log logged,2026-06-25 09:00:00

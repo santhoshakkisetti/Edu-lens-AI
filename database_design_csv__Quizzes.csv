@@ -1,0 +1,10 @@
+Column Name,Data Type,Required (Yes/No),Default Value,Primary Key,Foreign Key,Description,Example Value
+quiz_id,VARCHAR(36),Yes,NULL,Yes,No,Unique identifier for the quiz (UUID),qiz_2e3f4a1b
+creator_id,VARCHAR(36),No,NULL,No,Users.user_id,Foreign key referencing quiz author (NULL if system-generated),usr_9f82a1b3
+chapter_id,VARCHAR(36),No,NULL,No,Chapters.chapter_id,Foreign key referencing associated chapter,chp_5e3f2a1b
+title,VARCHAR(255),Yes,NULL,No,No,Title of the quiz,Midterm Physics Quiz 1
+quiz_type,VARCHAR(50),Yes,'system_generated',No,No,"Type of quiz (ai_generated, manual_creation, system_generated)",ai_generated
+total_questions,INT,Yes,0,No,No,Count of questions contained in this quiz,10
+time_limit_minutes,INT,No,NULL,No,No,Duration limit in minutes (NULL if untimed),15
+questions_data,JSON,Yes,NULL,No,No,"JSON containing questions array, options, and key","[{""q_id"": 1, ""text"": ""Solve 2+2"", ""options"": [""3"",""4""], ""correct"": ""4""}]"
+created_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Timestamp when quiz was created,2026-06-30 15:00:00

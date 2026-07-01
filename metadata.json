@@ -1,0 +1,6 @@
+{
+  "name": "EduLens AI",
+  "description": "EduLens AI is an AI Teacher Companion that allows students to photograph blackboard, textbook, or notes to extract text, simplify concepts, translate, and generate flashcards or quizzes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

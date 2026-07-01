@@ -1,0 +1,8 @@
+Column Name,Data Type,Required (Yes/No),Default Value,Primary Key,Foreign Key,Description,Example Value
+setting_id,VARCHAR(36),Yes,NULL,Yes,No,Unique identifier for settings log (UUID),set_9a8b1c2d
+user_id,VARCHAR(36),Yes,NULL,No,Users.user_id,Foreign key referencing user owner,usr_9f82a1b3
+theme,VARCHAR(20),Yes,'system',No,No,"Visual theme option (light, dark, system, geometric)",geometric
+push_enabled,BOOLEAN,Yes,TRUE,No,No,Alert push permissions toggle,TRUE
+email_digests_enabled,BOOLEAN,Yes,TRUE,No,No,Weekly digest delivery toggle,FALSE
+daily_goal_minutes,INT,Yes,30,No,No,Target study minutes per day,45
+updated_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Timestamp of last preferences save (UTC),2026-06-30 21:00:00

@@ -1,0 +1,9 @@
+Column Name,Data Type,Required (Yes/No),Default Value,Primary Key,Foreign Key,Description,Example Value
+history_id,VARCHAR(36),Yes,NULL,Yes,No,Unique identifier for study session log (UUID),sth_3a8b9c2d
+user_id,VARCHAR(36),Yes,NULL,No,Users.user_id,Foreign key referencing the studying user,usr_9f82a1b3
+subject_id,VARCHAR(36),Yes,NULL,No,Subjects.subject_id,Foreign key referencing the subject studied,sub_8f2d1c4e
+chapter_id,VARCHAR(36),No,NULL,No,Chapters.chapter_id,Foreign key referencing specific chapter studied,chp_5e3f2a1b
+session_type,VARCHAR(50),Yes,'reading',No,No,"Type of study session (reading, quiz, flashcard, ai_chat)",quiz
+duration_seconds,INT,Yes,0,No,No,Duration of the study session in seconds,1200
+completed_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Timestamp when study session ended (UTC),2026-06-30 18:30:00
+metadata,JSON,No,NULL,No,No,Flexible JSON log parameters (e.g. read pages),"{""pages_read"": [1,2,3,4]}"

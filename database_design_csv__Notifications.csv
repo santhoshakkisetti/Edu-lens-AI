@@ -1,0 +1,8 @@
+Column Name,Data Type,Required (Yes/No),Default Value,Primary Key,Foreign Key,Description,Example Value
+notification_id,VARCHAR(36),Yes,NULL,Yes,No,Unique identifier for notification log (UUID),ntf_3c4d5e6f
+user_id,VARCHAR(36),Yes,NULL,No,Users.user_id,Foreign key referencing recipient user,usr_9f82a1b3
+title,VARCHAR(150),Yes,NULL,No,No,Alert notification header,Daily Goal Achieved!
+message,VARCHAR(500),Yes,NULL,No,No,Alert notification body text,Congratulations! You have completed your daily study goal of 30 minutes.
+notification_type,VARCHAR(50),Yes,'system',No,No,"Type of alert (system, reminder, achievement, social)",achievement
+is_read,BOOLEAN,Yes,FALSE,No,No,Boolean state indicating reader checked,FALSE
+created_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Triggered timestamp,2026-06-30 20:00:00

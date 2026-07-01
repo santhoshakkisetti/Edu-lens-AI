@@ -1,0 +1,8 @@
+Column Name,Data Type,Required (Yes/No),Default Value,Primary Key,Foreign Key,Description,Example Value
+progress_id,VARCHAR(36),Yes,NULL,Yes,No,Unique identifier for tracking record (UUID),prg_7e8f9a1b
+user_id,VARCHAR(36),Yes,NULL,No,Users.user_id,Foreign key referencing candidate user,usr_9f82a1b3
+subject_id,VARCHAR(36),Yes,NULL,No,Subjects.subject_id,Foreign key referencing target subject,sub_8f2d1c4e
+chapters_completed,INT,Yes,0,No,No,Completed chapters count under subject parameter,2
+total_study_time_seconds,INT,Yes,0,No,No,Cumulative seconds studied in this subject,3600
+average_quiz_score,"DECIMAL(5,2)",No,NULL,No,No,Average percentage achieved in exams (NULL if no history),82.50
+last_activity_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Timestamp of last interaction with subject content (UTC),2026-06-30 18:30:00

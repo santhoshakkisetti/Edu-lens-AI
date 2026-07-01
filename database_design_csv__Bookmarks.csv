@@ -1,0 +1,7 @@
+Column Name,Data Type,Required (Yes/No),Default Value,Primary Key,Foreign Key,Description,Example Value
+bookmark_id,VARCHAR(36),Yes,NULL,Yes,No,Unique identifier for bookmark log (UUID),bmk_2a3b4c5d
+user_id,VARCHAR(36),Yes,NULL,No,Users.user_id,Foreign key referencing creator,usr_9f82a1b3
+reference_type,VARCHAR(50),Yes,NULL,No,No,"Bookmark object class (chapter, note, flashcard, ai_convo)",note
+reference_id,VARCHAR(36),Yes,NULL,No,No,Primary key target referencing bookmarked object,not_7f2b1a4d
+note_markup,VARCHAR(500),No,NULL,No,No,User customized custom note/tags attached to bookmark,Important for exams
+created_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Bookmark log timestamp (UTC),2026-06-30 19:30:00

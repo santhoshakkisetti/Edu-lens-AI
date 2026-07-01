@@ -1,0 +1,11 @@
+Column Name,Data Type,Required (Yes/No),Default Value,Primary Key,Foreign Key,Description,Example Value
+flashcard_id,VARCHAR(36),Yes,NULL,Yes,No,Unique identifier for the flashcard (UUID),fls_8b2c1d4e
+user_id,VARCHAR(36),Yes,NULL,No,Users.user_id,Foreign key referencing card owner,usr_9f82a1b3
+chapter_id,VARCHAR(36),No,NULL,No,Chapters.chapter_id,Foreign key referencing associated chapter,chp_5e3f2a1b
+front_text,TEXT,Yes,NULL,No,No,Text of the question displayed on the front,What is Superposition?
+back_text,TEXT,Yes,NULL,No,No,Text of the answer displayed on the back,A principle where a system can exist in multiple states...
+ease_factor,FLOAT,Yes,2.5,No,No,SM-2 spaced learning dynamic difficulty factor,2.6
+interval_days,INT,Yes,0,No,No,Days to wait before scheduled review according to SM-2,4
+repetitions,INT,Yes,0,No,No,Number of consecutive successful recall cycles,2
+next_review_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Calculated timestamp for next card review (UTC),2026-07-04 09:00:00
+created_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Timestamp when card was created,2026-06-28 14:00:00

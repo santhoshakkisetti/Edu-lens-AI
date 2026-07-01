@@ -1,0 +1,10 @@
+Column Name,Data Type,Required (Yes/No),Default Value,Primary Key,Foreign Key,Description,Example Value
+note_id,VARCHAR(36),Yes,NULL,Yes,No,Unique identifier for the note (UUID),not_7f2b1a4d
+user_id,VARCHAR(36),Yes,NULL,No,Users.user_id,Foreign key referencing note creator,usr_9f82a1b3
+chapter_id,VARCHAR(36),No,NULL,No,Chapters.chapter_id,Foreign key referencing associated chapter,chp_5e3f2a1b
+title,VARCHAR(255),Yes,NULL,No,No,Title of the note,Quantum Computing Basics
+content,TEXT,Yes,NULL,No,No,Main markdown content text of the note,Quantum mechanics is a fundamental theory...
+ai_summary,TEXT,No,NULL,No,No,AI-generated rich text summary of note body,Summarizes key quantum principles...
+is_public,BOOLEAN,Yes,FALSE,No,No,Flag indicating if note is shared publicly,FALSE
+created_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Timestamp when note was created,2026-06-30 10:15:00
+updated_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Timestamp of last note update,2026-06-30 11:20:00

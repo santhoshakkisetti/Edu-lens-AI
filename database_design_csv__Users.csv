@@ -1,0 +1,11 @@
+Column Name,Data Type,Required (Yes/No),Default Value,Primary Key,Foreign Key,Description,Example Value
+user_id,VARCHAR(36),Yes,NULL,Yes,No,Unique identifier for the user (UUID),usr_9f82a1b3
+email,VARCHAR(255),Yes,NULL,No,No,User's unique verified email address,santhosh.akkisetti@gmail.com
+password_hash,VARCHAR(255),Yes,NULL,No,No,Securely hashed password (BCrypt),$2a$12$K3vH8v7a9b0c1d2e3f4g5h...
+first_name,VARCHAR(100),Yes,NULL,No,No,User's given first name,Santhosh
+last_name,VARCHAR(100),Yes,NULL,No,No,User's surname or family name,Akkisetti
+avatar_url,VARCHAR(2083),No,NULL,No,No,URL linking to hosted profile avatar,https://example.com/avatars/user123.png
+auth_provider,VARCHAR(50),Yes,'local',No,No,"Auth platform (local, google, apple)",google
+is_verified,BOOLEAN,Yes,FALSE,No,No,Flag indicating if user email is verified,TRUE
+created_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Timestamp of account creation (UTC),2026-06-30 22:28:28
+updated_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Timestamp of last account modification (UTC),2026-06-30 22:28:28

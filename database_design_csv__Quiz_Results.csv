@@ -1,0 +1,9 @@
+Column Name,Data Type,Required (Yes/No),Default Value,Primary Key,Foreign Key,Description,Example Value
+result_id,VARCHAR(36),Yes,NULL,Yes,No,Unique identifier for result record (UUID),qrs_9a8b7c6d
+user_id,VARCHAR(36),Yes,NULL,No,Users.user_id,Foreign key referencing candidate user,usr_9f82a1b3
+quiz_id,VARCHAR(36),Yes,NULL,No,Quizzes.quiz_id,Foreign key referencing the quiz completed,qiz_2e3f4a1b
+score_obtained,INT,Yes,NULL,No,No,Total raw score achieved by candidate,8
+percentage_score,"DECIMAL(5,2)",Yes,NULL,No,No,Calculated percentage correct score,80.00
+time_taken_seconds,INT,Yes,NULL,No,No,Completion duration in seconds,450
+answers_data,JSON,Yes,NULL,No,No,JSON details mapping submitted choices vs correct key,"{""1"": ""4"", ""2"": ""5""}"
+completed_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Timestamp when attempt was submitted,2026-06-30 15:15:00

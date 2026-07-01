@@ -1,0 +1,7 @@
+Column Name,Data Type,Required (Yes/No),Default Value,Primary Key,Foreign Key,Description,Example Value
+chapter_id,VARCHAR(36),Yes,NULL,Yes,No,Unique identifier for the chapter (UUID),chp_5e3f2a1b
+subject_id,VARCHAR(36),Yes,NULL,No,Subjects.subject_id,Foreign key linking to parent subject module,sub_8f2d1c4e
+title,VARCHAR(150),Yes,NULL,No,No,Title description of the chapter,Quantum Algorithms
+sequence_number,INT,Yes,1,No,No,Sort order value under parent subject sequence,3
+content_url,VARCHAR(2083),No,NULL,No,No,URL linking to reference document (PDF/HTML),https://example.com/books/cs_quantum_ch3.pdf
+created_at,TIMESTAMP,Yes,CURRENT_TIMESTAMP,No,No,Creation timestamp of the chapter,2026-06-25 08:30:00

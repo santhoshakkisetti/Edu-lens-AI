@@ -1,0 +1,6 @@
+Section,Content
+Architectural Overview,"EduLens AI is an advanced AI-powered learning application providing smart notes, automated quiz generation, conversational AI doubts solving, and spaced-repetition flashcards."
+Relationships,"A comprehensive 1:N relational map exists from Users to Study History, Notes, Flashcards, Quiz Results, Achievements, Notifications, Progress, Settings, Conversations, Bookmarks, and Study Goals."
+SQL Equivalent Schema,"Available in SQL DDL file or inside the XLSX workbook."
+Firestore Design,"Available in JSON format inside the XLSX workbook."
+Index Recommendations,"Primary, Composite, and Full-Text index strategies are documented to optimize querying speeds."
